@@ -1,0 +1,11 @@
+React Hooks
+=====
+  Available from React 16.8.
+  They let you use state and other React features without writing a class comp.
+  Features that were available only in class comp are 
+  now available with the help of hooks in functional comp also.
+
+  Many features available to class comp such as lifecycle hooks and states are now possible in fn comp 
+
+  Hooks enable fn comp to have states in it. 
+  ----
