@@ -9,3 +9,7 @@ React Hooks
 
   Hooks enable fn comp to have states in it. 
   ----
+
+Rules of Hooks
+----
+  

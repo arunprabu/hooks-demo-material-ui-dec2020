@@ -1,0 +1,73 @@
+Step 1: 
+---
+  identify the urls and matching components 
+
+  localhost:3000/              Home  
+  localhost:3000/about         About 
+
+
+Step 2: 
+---
+  Create the components 
+  Home and About as functional components 
+
+Step 3: 
+--- 
+  npm i react-router-dom
+
+  This package will help us work on routing 
+
+Step 4: 
+---
+  Put our entire app under the control of <BrowserRouter>
+
+  in App.js 
+  ===
+    function App() {
+
+      return (
+        <BrowserRouter>
+          <div>
+            <Header />
+            <main>
+              <Button variant="contained" color="primary">Welcome</Button>
+            </main>
+            <Footer />
+          </div>
+        </BrowserRouter>
+      );
+    }
+
+    export default App;
+
+
+Step 5: 
+----
+  Configure the routes - in App.js 
+
+  <BrowserRouter>
+    <div>
+      <Header />
+      <Switch>
+        <Route path='/' component={Home} exact/>
+        <Route path='/about' component={About}/>
+      </Switch>
+      <Footer />
+    </div>
+  </BrowserRouter>
+
+Step 6: 
+---
+  Add Menu's in Header Comp 
+  using Link tag from react-router-dom. 
+
+  <Link to='/' className={classes.linkBtn}>
+    <Button variant="contained" color="default">Home</Button>
+  </Link>
+  <Link to='/about' className={classes.linkBtn}>
+    <Button variant="contained" color="default">About</Button>
+  </Link>
+
+
+====
+
